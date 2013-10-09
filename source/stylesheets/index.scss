@@ -1,0 +1,17 @@
+@import "./config";
+
+body {
+  padding: 10px;
+  background: #eeeeee;
+}
+
+#main {
+  margin-bottom: 75px;
+}
+
+footer {
+  margin: 0;
+  padding: 5px;
+  color: $base-color;
+  text-align: right;
+}

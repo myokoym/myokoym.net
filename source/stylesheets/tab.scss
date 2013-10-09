@@ -1,0 +1,103 @@
+@import "./config";
+
+$width: 640px;
+$height: 400px;
+
+.tabs {
+  input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  max-width: $width;
+  height: $height;
+  float: none;
+  list-style: none;
+  position: relative;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: black;
+    }
+
+    label {
+      color: black;
+    }
+  }
+
+  li.tab {
+    float: left;
+    padding-right: 5px;
+  }
+
+  .tab-content li {
+    padding: 3px;
+  }
+
+  .tab-content label {
+    border-radius: 10px 5px 10px 5px;
+  }
+
+  label {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px;
+    color: $base-color;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Lily Script One', helveti;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
+      top: 0;
+    }
+  }
+}
+
+[id^="tab"]:checked {
+  + label {
+    background: $base-color;
+    color: white;
+    top: 0;
+  }
+
+  ~ [id^="tab-content"] {
+    display: block;
+  }
+}
+
+.tab-content {
+  z-index: 2;
+  display: none;
+  text-align: left;
+  width: 100%;
+  height: $height;
+  overflow-y: auto;
+  font-size: 20px;
+  line-height: 140%;
+  padding-top: 10px;
+  background: $base-color;
+  padding: 15px;
+  color: white;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  box-sizing: border-box;
+  -webkit-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}

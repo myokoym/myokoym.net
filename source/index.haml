@@ -1,0 +1,84 @@
+---
+title: myokoym.net
+---
+
+%h1 myokoym.net
+
+#main
+  %ul.tabs
+    %li.tab
+      %input#tab1(type="radio" checked="checked" name="tabs")
+      %label(for="tab1") Social
+      #tab-content1.tab-content
+        %ul.tabs
+          %li
+            %a(href="http://myokoym.github.com/")
+              %label Blog
+          %li
+            %a(href="https://twitter.com/myokoym")
+              %label Twitter
+          %li
+            %a(href="https://github.com/myokoym")
+              %label GitHub
+          %li
+            %a(href="http://www.flickr.com/photos/myokoym/")
+              %label Photo
+          %li
+            %a(href="http://slide.rabbit-shocker.org/authors/myokoym/")
+              %label Slide
+    %li.tab
+      %input#tab2(type="radio" name="tabs")
+      %label(for="tab2") Application
+      #tab-content2.tab-content
+        %ul.tabs
+          %li
+            %a(href="/mojihex/")
+              %label MOJIHEX - Converter of Character and Hex bytes
+          %li
+            %a(href="/rab2pdf/")
+              %label rab2pdf - Rabbitable PDF maker
+          %li
+            %a(href="/feedcellar/")
+              %label feedcellar - 検索型RSSフィードリーダー兼ストレージ
+          %li
+            %a(href="/textamp/")
+              %label Textamp - Text amplifier - テキスト増幅器
+          %li
+            %a(href="/randta/")
+              %label Randta - ランダム文字列テーブル生成器
+          %li
+            %a(href="/mora/")
+              %label 拍数え - モーラ（拍）計算機
+          %li
+            %a(href="/kaibunkai/")
+              %label 回文かい？ - Palindrom checker in Japanese
+    %li.tab
+      %input#tab3(type="radio" name="tabs")
+      %label(for="tab3") Profile
+      #tab-content3.tab-content
+        %ul
+          %li
+            A free software programmer.
+          %li
+            An amateur Shogi player.
+    %li.tab
+      %input#tab4(type="radio" name="tabs")
+      %label(for="tab4") Power
+      #tab-content4.tab-content
+        %ul.tabs
+          %li
+            %a(href="https://ruby-lang.org/")
+              %label Ruby
+          %li
+            %a(href="http://middlemanapp.com/")
+              %label Middleman
+          %li
+            %a(href="http://columegg.com/")
+              %label コロンブスの卵
+    %li.tab
+      %input#tab5(type="radio" name="tabs")
+      %label(for="tab5") Other
+      #tab-content5.tab-content
+        Welcome to my website :-)
+%footer
+  %p (c) 2011-2013 Masafumi Yokoyama
