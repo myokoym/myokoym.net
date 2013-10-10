@@ -29,10 +29,8 @@ title: myokoym.net
       %label(for="tab3") Profile
       #tab-content3.tab-content
         %ul
-          %li
-            A free software programmer.
-          %li
-            An amateur Shogi player.
+          - data.profile.titles.each do |title|
+            %li= title
     %li.tab
       %input#tab4(type="radio" name="tabs")
       %label(for="tab4") Power
