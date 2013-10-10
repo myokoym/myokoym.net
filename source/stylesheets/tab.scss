@@ -65,14 +65,16 @@ $height: 400px;
 }
 
 [id^="tab"]:checked {
-  + label {
-    background: $base-color;
-    color: white;
-    bottom: 4px;
-  }
+  + .tab-area {
+    label.tab {
+      background: $base-color;
+      color: white;
+      bottom: 4px;
+    }
 
-  ~ [id^="tab-content"] {
-    display: block;
+    [id^="tab-content"] {
+      display: block;
+    }
   }
 }
 
