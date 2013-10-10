@@ -36,15 +36,10 @@ title: myokoym.net
       %label(for="tab4") Power
       #tab-content4.tab-content
         %ul.tabs
-          %li
-            %a(href="https://ruby-lang.org/")
-              %label Ruby
-          %li
-            %a(href="http://middlemanapp.com/")
-              %label Middleman
-          %li
-            %a(href="http://columegg.com/")
-              %label コロンブスの卵
+          - data.powered.websites.each do |website|
+            %li
+              %a{href: website.uri}
+                %label= website.name
     %li.tab
       %input#tab5(type="radio" name="tabs")
       %label(for="tab5") Other

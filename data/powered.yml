@@ -1,0 +1,7 @@
+websites:
+  - uri: https://ruby-lang.org
+    name: Ruby
+  - uri: http://middlemanapp.com
+    name: Middleman
+  - uri: http://columegg.com
+    name: コロンブスの卵
