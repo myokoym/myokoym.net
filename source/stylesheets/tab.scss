@@ -6,8 +6,7 @@ $height: 400px;
 .tabs {
   input[type="radio"] {
     position: absolute;
-    top: -9999px;
-    left: -9999px;
+    opacity: 0.0;
   }
 
   max-width: $width;
