@@ -11,19 +11,21 @@ title: myokoym.net
       %label(for="tab1") Social
       #tab-content1.tab-content
         %ul.tabs
-          - data.social.websites.each do |website|
+          - data.social.websites.each_with_index do |website, i|
+            - id = "social-website-#{i}"
             %li
-              %a{href: website.uri}
-                %label= website.name
+              %a{href: website.uri, id: id}
+                %label(for="#{id}")= website.name
     %li.tab
       %input#tab2(type="radio" name="tabs")
       %label(for="tab2") Application
       #tab-content2.tab-content
         %ul.tabs
-          - data.software.applications.each do |application|
+          - data.software.applications.each_with_index do |application, i|
+            - id = "software-application-#{i}"
             %li
-              %a(href="/#{application.uri}/")
-                %label= "#{application.name} - #{application.summary}"
+              %a(href="/#{application.uri}/" id="#{id}")
+                %label(for="#{id}")= "#{application.name} - #{application.summary}"
     %li.tab
       %input#tab3(type="radio" name="tabs")
       %label(for="tab3") Profile
@@ -36,10 +38,11 @@ title: myokoym.net
       %label(for="tab4") Power
       #tab-content4.tab-content
         %ul.tabs
-          - data.powered.websites.each do |website|
+          - data.powered.websites.each_with_index do |website, i|
+            - id = "powered-website-#{i}"
             %li
-              %a{href: website.uri}
-                %label= website.name
+              %a{href: website.uri, id: id}
+                %label(for="#{id}")= website.name
     %li.tab
       %input#tab5(type="radio" name="tabs")
       %label(for="tab5") Other
