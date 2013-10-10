@@ -31,27 +31,10 @@ title: myokoym.net
       %label(for="tab2") Application
       #tab-content2.tab-content
         %ul.tabs
-          %li
-            %a(href="/mojihex/")
-              %label MOJIHEX - Converter of Character and Hex bytes
-          %li
-            %a(href="/rab2pdf/")
-              %label rab2pdf - Rabbitable PDF maker
-          %li
-            %a(href="/feedcellar/")
-              %label feedcellar - 検索型RSSフィードリーダー兼ストレージ
-          %li
-            %a(href="/textamp/")
-              %label Textamp - Text amplifier - テキスト増幅器
-          %li
-            %a(href="/randta/")
-              %label Randta - ランダム文字列テーブル生成器
-          %li
-            %a(href="/mora/")
-              %label 拍数え - モーラ（拍）計算機
-          %li
-            %a(href="/kaibunkai/")
-              %label 回文かい？ - Palindrom checker in Japanese
+          - data.software.applications.each do |application|
+            %li
+              %a(href="/#{application.uri}/")
+                %label= "#{application.name} - #{application.summary}"
     %li.tab
       %input#tab3(type="radio" name="tabs")
       %label(for="tab3") Profile

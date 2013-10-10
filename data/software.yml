@@ -1,0 +1,28 @@
+applications:
+  - uri: mojihex
+    name: MOJIHEX
+    summary: Converter of Character and Hex bytes
+
+  - uri: rab2pdf
+    name: rab2pdf
+    summary: Rabbitable PDF maker
+
+  - uri: feedcellar
+    name: feedcellar
+    summary: 検索型RSSフィードリーダー兼ストレージ
+
+  - uri: textamp
+    name: Text amplifier
+    summary: テキスト増幅器
+
+  - uri: randta
+    name: Randta
+    summary: ランダム文字列テーブル生成器
+
+  - uri: mora
+    name: 拍数え
+    summary: モーラ（拍）計算機
+
+  - uri: kaibunkai
+    name: 回文かい？
+    summary: Palindrom checker in Japanese
