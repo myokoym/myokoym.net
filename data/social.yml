@@ -1,0 +1,11 @@
+websites:
+  - uri: http://myokoym.github.com
+    name: Blog
+  - uri: https://twitter.com/myokoym
+    name: Twitter
+  - uri: https://github.com/myokoym
+    name: GitHub
+  - uri: http://www.flickr.com/photos/myokoym
+    name: Photo
+  - uri: http://slide.rabbit-shocker.org/authors/myokoym
+    name: Slide

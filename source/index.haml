@@ -11,21 +11,10 @@ title: myokoym.net
       %label(for="tab1") Social
       #tab-content1.tab-content
         %ul.tabs
-          %li
-            %a(href="http://myokoym.github.com/")
-              %label Blog
-          %li
-            %a(href="https://twitter.com/myokoym")
-              %label Twitter
-          %li
-            %a(href="https://github.com/myokoym")
-              %label GitHub
-          %li
-            %a(href="http://www.flickr.com/photos/myokoym/")
-              %label Photo
-          %li
-            %a(href="http://slide.rabbit-shocker.org/authors/myokoym/")
-              %label Slide
+          - data.social.websites.each do |website|
+            %li
+              %a{href: website.uri}
+                %label= website.name
     %li.tab
       %input#tab2(type="radio" name="tabs")
       %label(for="tab2") Application
