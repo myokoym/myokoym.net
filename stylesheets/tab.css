@@ -49,17 +49,21 @@
     .tabs label:hover {
       background: rgba(255, 255, 255, 0.5);
       bottom: 4px; }
+  /* line 66, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+  .tabs label.tab {
+    height: 105%;
+    padding-top: 6px; }
 
-/* line 69, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+/* line 74, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
 [id^="tab"]:checked + .tab-area label.tab {
   background: gray;
   color: white;
   bottom: 4px; }
-/* line 75, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+/* line 80, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
 [id^="tab"]:checked + .tab-area [id^="tab-content"] {
   display: block; }
 
-/* line 81, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+/* line 86, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
 .tab-content {
   z-index: 2;
   display: none;
