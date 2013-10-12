@@ -8,62 +8,59 @@
   padding: 0; }
   /* line 7, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
   .tabs input[type="radio"] {
+    position: absolute;
     opacity: 0.0; }
-  /* line 18, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+  /* line 19, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
   .tabs a {
     text-decoration: none;
     color: white; }
-    /* line 22, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+    /* line 23, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
     .tabs a:hover {
       color: black; }
-    /* line 26, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+    /* line 27, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
     .tabs a label {
       color: black; }
-  /* line 31, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+  /* line 32, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
   .tabs li.tab {
     float: left;
     padding-right: 5px; }
-  /* line 36, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+  /* line 37, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
   .tabs .tab-content li {
     padding: 3px; }
-  /* line 40, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+  /* line 41, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
   .tabs .tab-content label {
     border-radius: 10px 5px 10px 5px; }
-  /* line 44, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+  /* line 45, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
   .tabs label {
     display: block;
     padding: 10px 20px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 2px 2px 2px 2px;
     color: gray;
     font-size: 24px;
     font-weight: normal;
     background: rgba(255, 255, 255, 0.2);
     cursor: pointer;
     position: relative;
-    bottom: 3px;
+    top: 3px;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
-    /* line 60, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+    /* line 61, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
     .tabs label:hover {
       background: rgba(255, 255, 255, 0.5);
-      bottom: 4px; }
-  /* line 66, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
-  .tabs label.tab {
-    height: 105%;
-    padding-top: 6px; }
+      top: 0; }
 
-/* line 74, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+/* line 70, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
 [id^="tab"]:checked + .tab-area label.tab {
   background: gray;
   color: white;
-  bottom: 4px; }
-/* line 80, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+  top: 0; }
+/* line 76, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
 [id^="tab"]:checked + .tab-area [id^="tab-content"] {
   display: block; }
 
-/* line 86, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
+/* line 82, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/tab.scss */
 .tab-content {
   z-index: 2;
   display: none;
