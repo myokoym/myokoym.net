@@ -5,6 +5,7 @@ $height: 400px;
 
 .tabs {
   input[type="radio"] {
+    position: absolute;
     opacity: 0.0;
   }
 
@@ -51,7 +52,7 @@ $height: 400px;
     background: rgba(255, 255, 255, 0.2);
     cursor: pointer;
     position: relative;
-    bottom: 3px;
+    top: 3px;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -59,7 +60,7 @@ $height: 400px;
 
     &:hover {
       background: rgba(255, 255, 255, 0.5);
-      bottom: 4px;
+      top: 0;
     }
   }
 }
@@ -69,7 +70,7 @@ $height: 400px;
     label.tab {
       background: $base-color;
       color: white;
-      bottom: 4px;
+      top: 0;
     }
 
     [id^="tab-content"] {
