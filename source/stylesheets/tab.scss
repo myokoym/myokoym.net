@@ -101,3 +101,25 @@ $height: 400px;
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
+
+@mixin tab-size($font-size, $max-width, $top) {
+  .tabs label.tab {
+    font-size: $font-size;
+    max-width: $max-width;
+  }
+
+  .tab-content {
+    top: $top;
+  }
+}
+
+@media (max-width: 600px) {
+  @include tab-size(18px, 50px, 48px);
+}
+
+@media (max-width: 500px) {
+  @include tab-size(9px, 20px, 44px);
+  .tabs label.tab:first-letter {
+    font-size: 16px;
+  }
+}
