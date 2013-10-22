@@ -1,15 +1,18 @@
 /* line 3, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/index.scss */
 body {
   padding: 10px;
-  background: #eeeeee; }
+  background: #eeeeee;
+}
 
 /* line 8, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/index.scss */
 #main {
-  margin-bottom: 75px; }
+  margin-bottom: 75px;
+}
 
 /* line 12, /home/myokoym/work/web/middleman/myokoym.net/source/stylesheets/index.scss */
 footer {
   margin: 0;
   padding: 5px;
   color: gray;
-  text-align: right; }
+  text-align: right;
+}
